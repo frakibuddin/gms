@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.cardiconhover:hover {
+  background-color: black;
+  color: white;
+  transition: 0.7s ease;
+  transition-timing-function: linear;
+  transition-delay: 0.1s;
+  transition-duration: 0.7s;
+}
+
+.cardarea {
+  background-color: lightgray;
+  /* color: black;
+transition: 0.7s ease;
+transition-timing-function: linear;
+transition-delay: 0.3s;
+transition-duration: 0.7s; */
+}
+
+.bgcolor {
+  text-align: justify;
+  background-color: #6699cc;
+  /* border-left-style: solid; */
+  border-left: solid;
+  border-left-color: #99aec6;
+  border-left-width: 40px;
+  /* background-color: #8D918D; */
+  /* color: black; */
+}
+
+.bgcolor h4 {
+  font-weight: bold;
+}
+
+.cardmainhover:hover {
+  background-color: #36454f;
+  color: white;
+  transition: 0.7s ease;
+  transition-timing-function: linear;
+  transition-delay: 0.3s;
+  transition-duration: 0.7s;
+}
+
+.fa-lock-open {
+  color: #357698;
+  stroke: black;
+  -webkit-text-stroke: 2px black;
+}
+
+.fa-sack-dollar {
+  color: #a523e2;
+  stroke: black;
+  -webkit-text-stroke: 2px black;
+}
+
+.fa-handshake-angle {
+  color: #d3be7e;
+  stroke: black;
+  -webkit-text-stroke: 2px black;
+}
+
+.fa-user-shield {
+  color: #b33a3a;
+  stroke: black;
+  -webkit-text-stroke: 2px black;
+}
+
+.fa-registered {
+  color: #291ae0;
+  stroke: black;
+  -webkit-text-stroke: 2px black;
+}
+
+.fa-coins {
+  color: #85bb65;
+  stroke: black;
+  -webkit-text-stroke: 2px black;
+}
+
+.titlebold {
+  font-weight: 700;
+}
+.gradient-color {
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.visiter-home-top-section-background {
+  /* background: rgb(2,0,36); */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  border: solid;
+  border-width: 1px;
+  border-color: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.visiter-home-top-section-background:hover {
+  background: black;
+  /* background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%); */
+  color: white;
+  border: solid;
+  border-width: 1px;
+  transition: 0.7s ease;
+  transition-timing-function: linear;
+  transition-delay: 0.3s;
+  transition-duration: 0.7s;
+}
+/* hero setion */
+.hero-section {
+  background: url(../../images/bg.svg);
+  background-size: contain;
+}
+.carousel-item .hero-content {
+  transition: 1s;
+  opacity: 0;
+}
+.carousel-item.active .hero-content {
+  animation: slideAnim 0.7s ease forwards;
+}
+@keyframes slideAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hero-content {
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.carousel-item {
+  padding: 2rem 0;
+}
+.carousel-item img {
+  height: 30rem !important;
+}
+.service-row .card {
+  min-height: 18rem;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000000;
+}
+body.bg-light {
+  color: var(--color-black) !important;
+}
+body.bg-dark {
+  color: var(--color-white) !important;
+}
+
+/* resgintetion css */
+.divider-text {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.divider-text span {
+  padding: 7px;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+}
+.divider-text:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+}
+
+.btn-facebook {
+  background-color: #405d9d;
+  color: #fff;
+}
+.btn-twitter {
+  background-color: #42aeec;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: auto !important;
+  }
+}

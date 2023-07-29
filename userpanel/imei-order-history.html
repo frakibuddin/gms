@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gsmwebservers</title>
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap5.3.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+  
+  <!-- fontawesome -->
+  <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet">
+
+<style>
+ nav li a{color:black !important;}
+ .firstbox{
+/* background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); */
+/* background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%); */
+/* background-image: linear-gradient(180deg, #FF057C 0%, #8D0B93 63%, #321575 100%); */
+background-image: linear-gradient(0deg, #0fd850 0%, #f9f047 100%);
+/* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+  border: none;
+}
+.secondbox{
+/* background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); */
+/* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+background-image: linear-gradient(180deg, #f9d423 0%, #ff4e50 100%);
+border:none;
+}
+.thirdbox{
+  /* background-image: linear-gradient(0deg, #4facfe 26%, #00f2fe 100%);   */
+  /* background-image: linear-gradient(180deg, #30cfd0 26%, #330867 100%); */
+  /* background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%); */
+  /* background-image: linear-gradient(180deg, #3ab5b0 0%, #3d99be 31%, #56317a 100%); */
+  background-image: linear-gradient(0deg, #AC32E4 0%, #7918F2 63%, #4801FF 100%);
+/* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+  border: none;
+}
+
+
+.firstbox2{
+/* background-image: linear-gradient(0deg, #0fd850 0%, #f9f047 100%); */
+  border: none;
+}
+.secondbox2{
+/* background-image: linear-gradient(180deg, #f9d423 0%, #ff4e50 100%); */
+border:none;
+}
+.thirdbox2{
+  /* background-image: linear-gradient(0deg, #AC32E4 0%, #7918F2 63%, #4801FF 100%); */
+  border: none;
+}
+
+  </style>
+
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg shadow-sm p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="#">
+        <img src="assets/img/logo1.png" alt="logo" width="me-auto" height="24">
+      </a> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="fa-solid fa-table"></i> Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-signal"></i> Our Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-regular fa-file-lines"></i> Order History
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-address-card"></i> My Account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-ticket"></i> Tickets
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i> New Ticket</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comments"></i> Ticket History</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-receipt"></i> Statement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-newspaper"></i> News & Updates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-coins"></i> Buy Credits</a>
+          </li>
+          
+          <!-- <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+        </ul>
+
+        <form class="d-flex" role="search">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <div class="btn-group">
+            <!-- <a href="#" class="btn btn-warning active" aria-current="page"><i class="fa-solid fa-address-card"></i>Registration</a> -->
+            <a href="#" class="btn btn-outline-danger rounded-5"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container py-4"></div>
+
+
+  <div class="container">
+    <div class="row container">
+
+        <table id="example" class="table table-striped table-light border table-bordered border-0 border-secondary" style="width:100%">
+           
+            <thead class="table-dark">
+                <tr>
+                    <th>Order ID</th>
+                    <th>Order Date</th>
+                    <th>Order Service</th>
+                    <th>Order Info</th>
+                    <th>Order Result</th>
+                    <th>Order Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>#12345</td>
+                    <td>
+                        Order at
+                        <br>
+                        <small>2011-04-25 11:00:21</small>
+                        <br>
+                        Reply at
+                        <br>
+                        <small>2011-04-25 23:49:21</small>
+                    </td>
+                    <td>Network Unlocking Service Iphone 5 to iphone 14 (Thailand)</td>
+                    <td>837269104529842</td>
+                    <td>Your phone is now unlocked and ready for use with any compatible carrier. Thank you for choosing our service.</td>
+                    <td>
+                        <button class="btn btn-sm btn-info rounded-3 border border-2 border-white">Inprocess</button>
+                        <button class="btn btn-sm btn-danger rounded-3 border border-2 border-white">Rejected</button>
+                        <button class="btn btn-sm btn-success rounded-3 border border-2 border-white">Success</button>
+                        <button class="btn btn-sm btn-warning rounded-3 border border-2 border-white">Pending</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>#12345</td>
+                    <td>
+                      Order at
+                      <br>
+                      <small>2011-04-25 11:00:21</small>
+                      <br>
+                      Reply at
+                      <br>
+                      <small>2011-04-25 23:49:21</small>
+                  </td>
+                    <td>Network Unlocking Service Iphone 5 to iphone 14 (Thailand)</td>
+                    <td>837269104529842</td>
+                    <td>Your phone is now unlocked and ready for use with any compatible carrier. Thank you for choosing our service.</td>
+                    <td>
+                        <button class="btn btn-sm btn-info rounded-3 border border-2 border-white">Inprocess</button>
+                        <button class="btn btn-sm btn-danger rounded-3 border border-2 border-white">Rejected</button>
+                        <button class="btn btn-sm btn-success rounded-3 border border-2 border-white">Success</button>
+                        <button class="btn btn-sm btn-warning rounded-3 border border-2 border-white">Pending</button>
+                    </td>
+                </tr>
+
+                <tr>
+                  <td>#12345</td>
+                  <td>
+                    Order at
+                    <br>
+                    <small>2011-04-25 11:00:21</small>
+                    <br>
+                    Reply at
+                    <br>
+                    <small>2011-04-25 23:49:21</small>
+                </td>
+                  <td>Network Unlocking Service Iphone 5 to iphone 14 (Thailand)</td>
+                  <td>837269104529842</td>
+                  <td>Your phone is now unlocked and ready for use with any compatible carrier. Thank you for choosing our service.</td>
+                  <td>
+                      <button class="btn btn-sm btn-info rounded-3 border border-2 border-white">Inprocess</button>
+                      <button class="btn btn-sm btn-danger rounded-3 border border-2 border-white">Rejected</button>
+                      <button class="btn btn-sm btn-success rounded-3 border border-2 border-white">Success</button>
+                      <button class="btn btn-sm btn-warning rounded-3 border border-2 border-white">Pending</button>
+                  </td>
+              </tr>
+                
+            </tbody>
+            
+        </table>
+
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+    </footer>
+  </div>
+
+
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins)  -->
+  <script src="assets/js/jquery-3.5.1.js"></script>
+  <script src="assets/js/jquery-3.5.1.js"></script>
+  <script src="assets/js/jquery.dataTables.min.js"></script>
+  <script src="assets/js/dataTables.bootstrap5.min.js"></script>
+  
+  <script>new DataTable('#example');</script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

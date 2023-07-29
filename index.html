@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gsmwebservers</title>
+
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- fontawesome -->
+  <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet">
+  <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet">
+  <!-- custom css -->
+  <link href="/assets/customcss/style.css" rel="stylesheet">
+
+  <style>
+
+  </style>
+
+</head>
+
+<body class="">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="index.html">
+        <img src="assets/img/logo1.png" alt="logo" width="me-auto" height="24">
+      </a> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-solid fa-house text-info"></i> Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-mobile-screen-button text-info"></i> Our Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-comment-dots text-info"></i> Contact Us</a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+        </ul>
+        <form class="d-flex gap-3" role="search">
+          <div class="text-info fs-4 " id="mode-btns">
+            <!-- <i class="fa-regular fa-moon"></i> -->
+            <i class="fa-regular fa-sun"></i>
+          </div>
+
+          <div class="btn-group">
+            <a href="registration.html" class="btn btn-warning active d-flex align-items-center gap-2"
+              aria-current="page"><i
+                class="fa-solid fa-address-card -flex align-items-center gap-2"></i>Registration</a>
+            <a href="login.html" class="btn btn-light"><i class="fa-solid fa-user"></i> Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- silder section start here -->
+  <section class="hero-section">
+
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="slide-content ">
+                  <h2 class="fs-1 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                  <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur animi fugiat,
+                    necessitatibus
+                    est ut nostrum repellendus neque, </p>
+                  <button type="button" class="btn btn-info btn-lg mt-3">Registration</button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="images/car-service.svg" class="d-block img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="slide-content">
+                  <h2 class=" mb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                  <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur animi fugiat,
+                    necessitatibus
+                    est ut nostrum repellendus neque, </p>
+                  <button type="button" class="btn btn-info btn-lg mt-3">Registration</button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="images/worker.svg" class="d-block img-fluid" alt="...">
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="slide-content text-light ">
+                  <h2 class="fs-1 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                  <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur animi fugiat,
+                    necessitatibus
+                    est ut nostrum repellendus neque, </p>
+                  <button type="button" class="btn btn-info btn-lg mt-3">Registration</button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="images/car-service.svg" class="d-block img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+    </div>
+
+  </section>
+  <!-- silder seection end here -->
+
+
+  <!-- <div class="container py-5">
+
+    <div class="card visiter-home-top-section-background py-1">
+      <div class="card-body fs-5">
+        <h4>Unlock Your Device: A Guide to Mobile Unlocking</h4>
+        <small>
+          Mobile unlocking refers to the process of removing the software restrictions that prevent a mobile device from
+          being used with different carriers or network providers. This is typically done by obtaining a unique unlock
+          code that can be entered into the device to remove the restrictions. Mobile unlocking websites offer a
+          convenient and affordable way to obtain an unlock code for your device. When choosing a mobile unlocking
+          website, it's important to consider factors such as reputation, pricing, customer support, turnaround time,
+          guarantee, payment methods, legal compliance, and compatibility with your carrier or network provider. By
+          unlocking your mobile device, you can enjoy the freedom of choosing the carrier or network provider that best
+          meets your needs, as well as take advantage of international travel opportunities without having to purchase a
+          new device.
+        </small>
+      </div>
+    </div>
+
+  </div> -->
+
+
+
+
+  <div class="container py-5">
+    <h2 class="text-center  mb-5 titlebold">Our Services</h2>
+    <div class="row service-row">
+      <div class="col-md-4 ">
+        <div class="card mb-3 cardiconhover cardarea">
+          <div class="row g-0">
+            <div class="col-md-4 border-end border-3 pr-4 d-flex align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-lock-open display-2 "></i>
+              <!-- <i class="fa-solid fa-lock"></i> -->
+              <!-- <img src="..." class="img-fluid rounded-start" alt="..."> -->
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title titlebold">Mobile Unlocking</h5>
+                <small class="card-text">Mobile phone all kind of unlocking network icloud frp, such as boxes, dongles,
+                  tools credits/activations, are available to unlock a range of devices.</small>
+                <p class="card-text"><small class="text-muted">Last updated today few mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="card mb-3 cardiconhover cardarea">
+          <div class="row g-0">
+            <div class="col-md-4 border-end border-3 pr-4 d-flex align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-sack-dollar display-1 "></i>
+              <!-- <img src="..." class="img-fluid rounded-start" alt="..."> -->
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title titlebold">Best Price</h5>
+                <small class="card-text">Best prices for individuals and resellers. We provide reliable & guaranteed
+                  unlocking services more discounted prices for bulk orders.</small>
+                <p class="card-text"><small class="text-muted">Last updated today few mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="card mb-3 cardiconhover cardarea">
+          <div class="row g-0">
+            <div class="col-md-4 border-end border-3 pr-4 d-flex align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-coins display-1 "></i>
+
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title titlebold">Credits And Refunds</h5>
+                <small class="card-text">UnlockMasterr accepts PayPal, USDT, and Thai bank transfers for prepaid
+                  unlocking services. Terms apply for refunds on unsuccessful unlocks.</small>
+                <p class="card-text"><small class="text-muted">Last updated 7 days ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- 2nd row start -->
+
+  <div class="container py-1">
+
+    <div class="row service-row">
+
+      <div class="col-md-4">
+        <div class="card mb-3 cardiconhover cardarea">
+          <div class="row g-0">
+            <div class="col-md-4 border-end border-3 pr-4 d-flex align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-user-shield display-2"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title titlebold">Fraud Protection</h5>
+                <small class="card-text">Prevents fraud and unauthorized access to personal and financial information by
+                  monitoring transactions and detecting suspicious activities.</small>
+                <p class="card-text"><small class="text-muted">Last updated today few mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-3 cardiconhover cardarea">
+          <div class="row g-0">
+            <div class="col-md-4 border-end border-3 pr-4 d-flex align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-registered display-2"></i>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title titlebold">Trusted And Reliable</h5>
+                <small class="card-text">Unlockmasterr is a DBD-registered mobile unlocking service, offering safe and
+                  secure unlocking services for mobile devices in Thailand and beyond.</small>
+                <p class="card-text"><small class="text-muted">Last updated today few mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-3 cardiconhover cardarea">
+          <div class="row g-0">
+            <div class="col-md-4 border-end border-3 pr-4 d-flex align-items-center justify-content-center py-4">
+              <i class="fa-solid fa-handshake-angle display-2"></i>
+
+              <!-- <img src="..." class="img-fluid rounded-start" alt="..."> -->
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title titlebold">24/7 Support</h5>
+                <small class="card-text">Our mobile unlocking services come with 24/7 customer support. Our
+                  knowledgeable team is available to help you with any questions or issues.</small>
+                <p class="card-text"><small class="text-muted">Last updated 7 days ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="b-example-divider">
+    <hr>
+  </div>
+  <div class="container ">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5 class="">Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-0">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-warning" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <span class="bi text-white" width="24" height="24"><i class="fa-brands fa-facebook"></i></span>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <span class="bi text-white" width="24" height="24"><i class="fa-brands fa-twitter"></i></span>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <span class="bi text-white" width="24" height="24"><i class="fa-brands fa-youtube"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
