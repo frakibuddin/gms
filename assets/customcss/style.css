@@ -42,6 +42,10 @@ body.bg-dark .card-header {
 .nav-link {
   font-size: 1.2rem;
 }
+.navbar-collapse {
+  position: relative;
+  z-index: 999;
+}
 .cardiconhover {
   transition: 0.3s;
 }
