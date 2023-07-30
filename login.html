@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="">
+<body class="bg-dark">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
     <div class="container-fluid">
       <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="index.html">
@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">
+            <a class="nav-link active" aria-current="page" href="#">
               <i class="fa-solid fa-house text-info"></i> Home</a>
           </li>
           <li class="nav-item dropdown">
@@ -57,25 +57,24 @@
         </ul>
         <form class="d-flex gap-3" role="search">
           <div class="text-info fs-4 " id="mode-btns">
-            <!-- <i class="fa-regular fa-moon"></i> -->
             <i class="fa-regular fa-sun"></i>
           </div>
 
           <div class="btn-group">
-            <a href="#" class="btn btn-warning active d-flex align-items-center gap-2" aria-current="page"><i
+            <a href="registration.html" class="btn btn-warning active d-flex align-items-center gap-2"
+              aria-current="page"><i
                 class="fa-solid fa-address-card -flex align-items-center gap-2"></i>Registration</a>
-            <a href="#" class="btn btn-light"><i class="fa-solid fa-user"></i> Login</a>
+            <a href="login.html" class="btn btn-light"><i class="fa-solid fa-user"></i> Login</a>
           </div>
         </form>
       </div>
     </div>
   </nav>
-
   <!-- registrantion -->
   <div class="container">
-    <div class="gradient-color shadow rounded-3 my-5 m-auto w-50">
-      <article class="p-5 m-auto" style="max-width: 800px;">
-        <h1 class="text-light display-4 pb-5 fw-bold visiter-services" align="center"><i
+    <div class="gradient-color shadow rounded-3 my-5 m-auto login-form-width fade-in-bottom scrolled">
+      <article class="p-5 ">
+        <h1 class="text-light display-4 pb-5 fw-bold visiter-services js-scroll fade-in scrolled" align="center"><i
             class="fa-solid fa-right-to-bracket"></i>
           Login</h1>
         <form>
@@ -126,86 +125,82 @@
 
   <!-- end regintration -->
 
-
-  <footer>
-    <div class="b-example-divider">
-      <hr>
-    </div>
-
-
-    <div class="container ">
-      <footer class="py-5">
-        <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-5 offset-md-1 mb-0">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-warning" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
-          <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <span class="bi text-white" width="24" height="24"><i class="fa-brands fa-facebook"></i></span>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <span class="bi text-white" width="24" height="24"><i class="fa-brands fa-twitter"></i></span>
-              </a>
-            </li>
-            <li class="ms-3">
-              <a class="link-dark" href="#">
-                <span class="bi text-white" width="24" height="24"><i class="fa-brands fa-youtube"></i></span>
-              </a>
-            </li>
+  <div class="b-example-divider">
+    <hr>
+  </div>
+  <div class="container ">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3 js-scroll fade-in-bottom">
+          <h5 class="">Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
           </ul>
         </div>
-      </footer>
-    </div>
 
-  </footer>
+        <div class="col-6 col-md-2 mb-3 js-scroll fade-in-bottom">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3 js-scroll fade-in-bottom">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-0 js-scroll fade-in-bottom">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-warning" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+        <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex footer-icon">
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <span class="bi " width="24" height="24"><i class="fa-brands fa-facebook"></i></span>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <span class="bi " width="24" height="24"><i class="fa-brands fa-twitter"></i></span>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <span class="bi " width="24" height="24"><i class="fa-brands fa-youtube"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+
 
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,23 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-.cardiconhover:hover {
-  background-color: black;
-  color: white;
+:root {
+  --color-white: #fff;
+  --color-black: #000000;
+}
+body.bg-light {
+  color: var(--color-black) !important;
+}
+body.bg-dark {
+  color: var(--color-white) !important;
+}
+body.bg-light .card {
+  color: var(--color-black) !important;
+}
+body.bg-dark .card {
+  color: var(--color-black) !important;
+}
+
+body.bg-light .footer-icon i {
+  color: var(--color-black) !important;
+}
+body.bg-dark .footer-icon i {
+  color: var(--color-white) !important;
+}
+
+body.bg-light .carousel-indicators [data-bs-target] {
+  background-color: var(--color-black) !important;
+}
+.nav-link {
+  font-size: 1.2rem;
+}
+.cardiconhover:hover i {
+  transition: 0.3s;
+}
+.cardiconhover:hover i {
+  transform: translateY(-1rem);
+  /* background-color: black;
+  color: white !important;
   transition: 0.7s ease;
   transition-timing-function: linear;
   transition-delay: 0.1s;
   transition-duration: 0.7s;
+  color: red !important; */
 }
 
 .cardarea {
   background-color: lightgray;
-  /* color: black;
-transition: 0.7s ease;
-transition-timing-function: linear;
-transition-delay: 0.3s;
-transition-duration: 0.7s; */
 }
 
 .bgcolor {
@@ -126,18 +157,37 @@ transition-duration: 0.7s; */
   background: url(../../images/bg.svg);
   background-size: contain;
 }
-.carousel-item .hero-content {
+.carousel-item .slide-content {
   transition: 1s;
   opacity: 0;
 }
-.carousel-item.active .hero-content {
-  animation: slideAnim 0.7s ease forwards;
+.carousel-item.active .slide-content {
+  animation: slideLeft 0.5s ease forwards;
 }
-@keyframes slideAnim {
+.slide-image {
+  transition: 1s;
+  opacity: 0;
+}
+.carousel-item.active .slide-image {
+  animation: skelll 0.5s ease forwards;
+}
+@keyframes slideLeft {
   0% {
     opacity: 0;
+    transform: translateX(-20rem);
   }
   100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes skelll {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -151,24 +201,13 @@ transition-duration: 0.7s; */
   text-align: center;
 }
 .carousel-item {
-  padding: 2rem 0;
+  padding: 5rem 0;
 }
 .carousel-item img {
   height: 30rem !important;
 }
 .service-row .card {
-  min-height: 18rem;
-}
-
-:root {
-  --color-white: #fff;
-  --color-black: #000000;
-}
-body.bg-light {
-  color: var(--color-black) !important;
-}
-body.bg-dark {
-  color: var(--color-white) !important;
+  min-height: 20rem;
 }
 
 /* resgintetion css */
@@ -202,9 +241,145 @@ body.bg-dark {
   background-color: #42aeec;
   color: #fff;
 }
+.login-form-width {
+  width: 50%;
+}
+/* js scroll */
+/* onscroll animation */
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  -webkit-animation: fade-in 0.5s ease-in-out both;
+  animation: fade-in 0.5s ease-in-out both;
+}
+
+.scrolled.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 0.5s ease-in-out both;
+  animation: fade-in-bottom 0.5s ease-in-out both;
+}
+
+.scrolled.slide-left {
+  -webkit-animation: slide-in-left 0.5s ease-in-out both;
+  animation: slide-in-left 0.5s ease-in-out both;
+}
+
+.scrolled.slide-right {
+  -webkit-animation: slide-in-right 0.5s ease-in-out both;
+  animation: slide-in-right 0.5s ease-in-out both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (max-width: 768px) {
   .carousel-item img {
     height: auto !important;
+  }
+  .login-form-width {
+    width: 90%;
   }
 }
