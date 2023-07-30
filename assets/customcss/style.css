@@ -363,7 +363,9 @@ body.bg-dark .card-header {
     opacity: 1;
   }
 }
-
+.text-md-center {
+  text-align: left !important;
+}
 @media (max-width: 768px) {
   .carousel-item img {
     height: auto !important;
