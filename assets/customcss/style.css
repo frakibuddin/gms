@@ -367,8 +367,15 @@ body.bg-dark .card-header {
 @media (max-width: 768px) {
   .carousel-item img {
     height: auto !important;
+    width: 80%;
   }
   .login-form-width {
     width: 90%;
+  }
+  .text-md-center {
+    text-align: center !important;
+  }
+  .p-md-3 {
+    padding: 2rem !important;
   }
 }
