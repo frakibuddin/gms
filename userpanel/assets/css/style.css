@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body.bg-light .sidemenu-text-color a {
+  color: #fff !important;
+}
+body.bg-light .sidemenu-text-color a:hover {
+  color: rgb(59, 160, 248) !important;
+}

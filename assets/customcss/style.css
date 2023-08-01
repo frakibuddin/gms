@@ -13,11 +13,12 @@ body.bg-light {
 body.bg-dark {
   color: var(--color-white) !important;
 }
-body.bg-light .card {
+body.bg-light .card .card-title,
+body.bg-light .card .card-text {
   color: var(--color-black) !important;
 }
 body.bg-dark .card {
-  color: var(--color-black) !important;
+  color: var(--color-white) !important;
 }
 
 body.bg-light .footer-icon i {
@@ -32,12 +33,21 @@ body.bg-light .carousel-indicators [data-bs-target] {
 }
 
 body.bg-light .cardarea {
-  background-color: rgb(13, 202, 240) !important;
-  box-shadow: 2px 3px 5px 2px rgb(53 124 117 / 58%) !important;
+  background-color: lightgray !important;
+  box-shadow: 2px 3px 5px 2px rgba(84, 85, 85, 0.58) !important;
 }
 
 body.bg-dark .card-header {
   border-color: rgb(77, 77, 77);
+}
+body.bg-light .card-header {
+  color: var(--color-black);
+}
+body.bg-light .text-color {
+  color: var(--color-black) !important;
+}
+body.bg-dark .text-color {
+  color: var(--color-white) !important;
 }
 .nav-link {
   font-size: 1.2rem;
