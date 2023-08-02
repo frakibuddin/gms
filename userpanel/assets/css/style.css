@@ -7,6 +7,79 @@
 body.bg-light .sidemenu-text-color a {
   color: #fff !important;
 }
-body.bg-light .sidemenu-text-color a:hover {
-  color: rgb(59, 160, 248) !important;
+body.bg-dark .sidemenu-text-color a {
+  color: #fff !important;
+}
+body .sidemenu-text-color a:hover {
+  color: rgb(51, 204, 224) !important;
+}
+.main-content {
+  padding-left: 5% !important;
+}
+body.bg-dark {
+  color: #fff !important;
+}
+body.bg-light .text-light {
+  color: #000000 !important;
+}
+body.bg-dark .text-light {
+  color: #fff !important;
+}
+body.bg-dark .dropdown-menu-light {
+  background: rgb(7, 7, 41) !important;
+}
+body.bg-dark .dropdown-menu-light li a {
+  color: #fff !important;
+}
+
+.alert {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  animation: alertAnim 0.3s linear forwards;
+}
+@keyframes alertAnim {
+  0% {
+    top: -2rem;
+  }
+  100% {
+    top: 0.5rem;
+  }
+}
+
+#datatable_paginate a {
+  background: #fff !important;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid gray;
+}
+#datatable_paginate .current {
+  background: #0d6efd !important;
+}
+.table-responsive {
+  padding: 1rem 0;
+  overflow-y: hidden;
+}
+
+body.bg-dark table.dataTable td,
+body.bg-dark table.dataTable th {
+  color: #fff !important;
+}
+body.bg-dark table.dataTable thead {
+  background: gray !important;
+}
+body.bg-dark nav {
+  box-shadow: 0 0.125rem 0.25rem #5e5c5c !important ;
+}
+.choices {
+  width: 100%;
+}
+.choices__list--dropdown .choices__item--selectable {
+  color: #000000;
+}
+body.bg-dark .card {
+  background: #36454f !important;
 }

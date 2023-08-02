@@ -33,7 +33,7 @@ body.bg-light .carousel-indicators [data-bs-target] {
 }
 
 body.bg-light .cardarea {
-  background-color: lightgray !important;
+  background: #64f3fd !important;
   box-shadow: 2px 3px 5px 2px rgba(84, 85, 85, 0.58) !important;
 }
 
@@ -60,7 +60,7 @@ body.bg-dark .text-color {
   transition: 0.3s;
 }
 .cardiconhover:hover {
-  opacity: 0.6;
+  transform: scale(1.03);
 }
 .cardiconhover:hover i {
   transition: 0.3s;
@@ -79,9 +79,10 @@ body.bg-dark .text-color {
 }
 
 .cardarea {
-  background-color: rgb(15, 2, 29);
-  box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.582);
+  background: linear-gradient(45deg, #36454f, #36454f);
+  box-shadow: 0px 0px 4px 1px #252f36;
   color: #fff !important;
+  border: 0 !important;
 }
 .card-body {
   color: white !important;
@@ -275,6 +276,57 @@ body.bg-dark .text-color {
   right: 20rem;
   z-index: 1;
   opacity: 0.7;
+}
+
+/* login page */
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(
+      650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    );
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#01c1ce, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+.bg-glass {
+  backdrop-filter: saturate(200%) blur(25px);
+}
+
+body.bg-light .bg-glass {
+  color: var(--color-black) !important;
+}
+body.bg-dark .bg-glass {
+  background-color: #01c0ce94 !important;
 }
 
 /* resgintetion css */

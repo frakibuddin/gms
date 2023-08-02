@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gsmwebservers</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link href="/assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/assets/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="/assets/fontawesome/css/solid.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../userpanel/assets/css/dataTables.bootstrap5.0.min.css">
+    <link rel="stylesheet" href="../userpanel/assets/css/style.css">
+
+
+
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg shadow-sm p-3 ">
+        <div class="container-fluid">
+            <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="index.html">
+                <img src="assets/img/logo1.png" alt="logo" width="me-auto" height="24">
+            </a> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <form class="d-flex gap-4 align-items-center" role="search">
+
+                    <div class="text-info fs-4 " id="mode-btns">
+                        <i class="fa-regular fa-sun"></i>
+                    </div>
+                    <div class="dropdown ">
+                        <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../userpanel/assets/img/img_avatar2.png" alt="hugenerd" width="30" height="30"
+                                class="rounded-circle">
+                            <span class="d-none d-sm-inline text-light mx-1">Profile</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light text-small shadow">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="invoice.html">Invoice</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-outline-info rounded-5"><i
+                                class="fa-solid fa-right-from-bracket"></i>
+                            Logout</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--srart sidebar -->
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-secondary
+      border-right">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidemenu-text-color "
+                        id="menu">
+
+                        <li>
+                            <a href="index.html" class="nav-link px-0 align-middle  ">
+                                <i class="fa-solid fa-table"></i>
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-signal"></i> <span class="ms-1 d-none d-sm-inline"> Our
+                                    Services</span> </a>
+                            <ul class="collapse  nav flex-column ms-1 " id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="imei-services.html" class="nav-link px-0">
+                                        <i class="fa-solid fa-barcode"></i>
+                                        <span class="d-none d-sm-inline"> IMEI Services</span> </a>
+                                </li>
+                                <li>
+                                    <a href="server-services.html" class="nav-link px-0">
+                                        <i class="fa-solid fa-server"></i>
+                                        <span class="d-none d-sm-inline"> Server Services</span> </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fa-regular fa-file-lines"></i> <span class="ms-1 d-none d-sm-inline"> Order
+                                    History</span>
+                            </a>
+                            <ul class="collapse  nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0">
+                                        <i class="fa-solid fa-barcode"></i>
+                                        <span class="d-none d-sm-inline"> IMEI Services</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0">
+                                        <i class="fa-solid fa-server"></i>
+                                        <span class="d-none d-sm-inline"> Server Services</span> </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fa-regular fa-address-card"></i>
+                                <span class="ms-1 d-none d-sm-inline"> My Account</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-ticket"></i><span class="ms-1 d-none d-sm-inline"> Tickets </span>
+                            </a>
+                            <ul class="collapse  nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0">
+                                        <i class="fa-solid fa-comment"></i>
+                                        <span class="d-none d-sm-inline"> New Ticket</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0">
+                                        <i class="fa-solid fa-comments"></i>
+                                        <span class="d-none d-sm-inline"> Ticket History</span> </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle  ">
+                                <i class="fa-solid fa-receipt"></i>
+                                <span class="ms-1 d-none d-sm-inline"> Statement</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle  ">
+                                <i class="fa-regular fa-newspaper"></i>
+                                <span class="ms-1 d-none d-sm-inline"> News & Updates</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle  ">
+                                <i class="fa-solid fa-coins"></i>
+                                <span class="ms-1 d-none d-sm-inline"> Buy Credits</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- start-main content -->
+            <div class="col-md-8 pl-5 flex-shrink-1 mx-auto pb-5  ">
+                <div class="col-md-1"></div>
+                <div class="card my-4 ">
+                    <div class="card-body">
+                        <div class="invoice-title">
+                            <h4 class="float-end font-size-15">Invoice #DS0204 <span
+                                    class="badge bg-success font-size-12 ms-2">Paid</span></h4>
+                            <div class="mb-4">
+                                <h2 class="mb-1 text-muted">Company Name</h2>
+                            </div>
+                            <div class="text-muted">
+                                <p class="mb-1">3184 Spruce Drive Pittsburgh, PA 15201</p>
+                                <p class="mb-1"><i class="uil uil-envelope-alt me-1"></i> xyz@987.com</p>
+                                <p><i class="uil uil-phone me-1"></i> 012-345-6789</p>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="text-muted">
+                                    <h5 class="font-size-16 mb-3">Billed To:</h5>
+                                    <h5 class="font-size-15 mb-2">Preston Miller</h5>
+                                    <p class="mb-1">4068 Post Avenue Newfolden, MN 56738</p>
+                                    <p class="mb-1">PrestonMiller@armyspy.com</p>
+                                    <p>001-234-5678</p>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-sm-6">
+                                <div class="text-muted text-sm-end">
+                                    <div>
+                                        <h5 class="font-size-15 mb-1">Invoice No:</h5>
+                                        <p>#DZ0112</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h5 class="font-size-15 mb-1">Invoice Date:</h5>
+                                        <p>12 Oct, 2020</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h5 class="font-size-15 mb-1">Order No:</h5>
+                                        <p>#1123456</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="py-2">
+                            <h5 class="font-size-15">Order Summary</h5>
+
+                            <div class="table-responsive">
+                                <table class="table align-middle table-nowrap table-centered mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 70px;">No.</th>
+                                            <th>Item</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th class="text-end" style="width: 120px;">Total</th>
+                                        </tr>
+                                    </thead><!-- end thead -->
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">01</th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14 mb-1"> iPhone Online Unlocking
+                                                        Service Worldwide</h5>
+                                                    <p class="text-muted mb-0">Watch, Black</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 245.50</td>
+                                            <td>1</td>
+                                            <td class="text-end">$ 245.50</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row">02</th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14 mb-1">Motorola
+                                                    </h5>
+                                                    <p class="text-muted mb-0">Watch, Gold</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 245.50</td>
+                                            <td>2</td>
+                                            <td class="text-end">$491.00</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row">03</th>
+                                            <td>
+                                                <div>
+                                                    <h5 class="text-truncate font-size-14 mb-1">Samsung
+                                                    </h5>
+                                                    <p class="text-muted mb-0">Watch, Gold</p>
+                                                </div>
+                                            </td>
+                                            <td>$ 245.50</td>
+                                            <td>2</td>
+                                            <td class="text-end">$491.00</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row" colspan="4" class="text-end">Sub Total</th>
+                                            <td class="text-end">$732.50</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row" colspan="4" class="border-0 text-end">
+                                                Discount :</th>
+                                            <td class="border-0 text-end">- $25.50</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row" colspan="4" class="border-0 text-end">
+                                                Shipping Charge :</th>
+                                            <td class="border-0 text-end">$20.00</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row" colspan="4" class="border-0 text-end">
+                                                Tax</th>
+                                            <td class="border-0 text-end">$12.00</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row" colspan="4" class="border-0 text-end">Total</th>
+                                            <td class="border-0 text-end">
+                                                <h4 class="m-0 fw-semibold">$739.00</h4>
+                                            </td>
+                                        </tr>
+                                        <!-- end tr -->
+                                    </tbody><!-- end tbody -->
+                                </table><!-- end table -->
+                            </div><!-- end table responsive -->
+                            <!-- <div class="d-print-none mt-4">
+                                <div class="float-end">
+                                    <a href="javascript:window.print()" class="btn btn-success me-1"><i
+                                            class="fa fa-print"></i></a>
+                                    <a href="#" class="btn btn-primary w-md">Send</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+
+            <!-- end-main content -->
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)  -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

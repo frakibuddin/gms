@@ -21,6 +21,13 @@
 </head>
 
 <body class="bg-light">
+
+
+  <div class="alert alert-warning alert-dismissible fade show my-alert" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
   <nav class="navbar navbar-expand-lg shadow-sm p-3 ">
     <div class="container-fluid">
       <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="index.html">
@@ -34,15 +41,19 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         </ul>
-        <form class="d-flex gap-4" role="search">
+        <form class="d-flex gap-4 align-items-center" role=" search">
+          <div class="text-info fs-4 " id="mode-btns">
+            <i class="fa-regular fa-sun"></i>
+          </div>
           <div class="dropdown ">
             <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
               id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../userpanel/assets/img/logo2.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-              <span class="d-none d-sm-inline mx-1">Profile</span>
+              <img src="../userpanel/assets/img/img_avatar2.png" alt="hugenerd" width="30" height="30"
+                class="rounded-circle">
+              <span class="d-none d-sm-inline mx-1 text-light">Profile</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-light text-small shadow">
-              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="invoice.html">Invoice</a></li>
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li>
                 <hr class="dropdown-divider">
@@ -51,7 +62,7 @@
             </ul>
           </div>
           <div class="btn-group">
-            <a href="#" class="btn btn-outline-danger rounded-5"><i class="fa-solid fa-right-from-bracket"></i>
+            <a href="#" class="btn btn-outline-info rounded-5"><i class="fa-solid fa-right-from-bracket"></i>
               Logout</a>
           </div>
         </form>
@@ -66,7 +77,6 @@
       <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-secondary
       border-right">
         <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-
           <ul
             class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidemenu-text-color "
             id="menu">
@@ -166,21 +176,33 @@
       <div class="col-lg-1 col"></div>
       <div class="col-md-6 pl-5 flex-shrink-1">
         <h3 class="pt-4"><i class="fa-solid fa-server"></i> SERVER Services </h3>
-        <div>
-          <label for="formGroupExampleInput" class="form-label mt-4"><i class="fa-solid fa-list"></i> Select
-            Service</label>
-          <div class="input-group">
-            <div class="input-group-text bg-secondary"><i class="fa-solid fa-list text-white"></i></div>
-            <select id="inputState" class="form-select selectpicker" data-live-search="true" data-container="body">
-              <option value="" selected>Choose...</option>
-              <optgroup label="Hot Services">
-                <option value="">iCloud Clean Mode Service All Models Supported</option>
-                <option value="">Samsung Network Lock WorldWide Service</option>
-                <option>Motorola Nck Service 24/7</option>
-              </optgroup>
-            </select>
-          </div>
+        <!--  -->
+
+        <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+
+        <label for="formGroupExampleInput" class="form-label mt-4"><i class="fa-solid fa-list"></i> Select
+          Service</label>
+        <div class="input-group flex-nowrap">
+          <div class="input-group-text bg-secondary"><i class="fa-solid fa-list text-white"></i></div>
+          <select class="form-control choices-single w-100">
+            <option value="" selected>Choose...</option>
+            <optgroup label="Hot Services">
+              <option value="iCloud Clean Mode Service All Models Supported">iCloud Clean Mode Service All Models
+                Supported</option>
+              <option value="Samsung Network Lock WorldWide Service">Samsung Network Lock WorldWide Service</option>
+              <option value="Motorola Nck Service 24/7">Motorola Nck Service 24/7</option>
+            </optgroup>
+          </select>
         </div>
+        <script>
+          new Choices(document.querySelector(".choices-single"));
+        </script>
+
+
+        <!--  -->
+
         <div>
           <label class="form-label mt-4" for="autoSizingInputGroup"><i class="fa-solid fa-xmarks-lines"></i>
             Password</label>
@@ -268,6 +290,7 @@
   <script src="assets/js/jquery-3.4.1.min.js"></script>
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/script.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
 </body>
