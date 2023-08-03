@@ -83,3 +83,14 @@ body.bg-dark nav {
 body.bg-dark .card {
   background: #36454f !important;
 }
+
+.dataTables_length {
+  width: 10rem;
+  float: left;
+  margin: 0.5rem 0;
+}
+.datatable_filter {
+  width: 14rem;
+  float: right;
+  margin: 0.5rem 0;
+}

@@ -38,7 +38,7 @@ body.bg-light .cardarea {
 }
 
 body.bg-dark .card-header {
-  border-color: rgb(77, 77, 77);
+  border-color: rgb(199, 199, 199);
 }
 body.bg-light .card-header {
   color: var(--color-black);
@@ -49,6 +49,12 @@ body.bg-light .text-color {
 body.bg-dark .text-color {
   color: var(--color-white) !important;
 }
+
+body.bg-light .btn-outline-light {
+  color: var(--color-black) !important;
+  border-color: var(--color-black) !important;
+}
+
 .nav-link {
   font-size: 1.2rem;
 }
