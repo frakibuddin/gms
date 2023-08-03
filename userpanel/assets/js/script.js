@@ -20,9 +20,8 @@ modeBtn.onclick = () => {
     localStorage.setItem("mode", "bg-dark");
   }
 };
-mode = localStorage.getItem("mode");
 
-console.log(mode);
+mode = localStorage.getItem("mode");
 
 body.setAttribute("class", mode);
 
@@ -34,4 +33,6 @@ window.setTimeout(function () {
       $(this).slideUp();
     });
 }, 4000);
-new DataTable("#example_wrapper");
+
+// new DataTable("#example_wrapper");
+//

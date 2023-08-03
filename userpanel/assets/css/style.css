@@ -32,6 +32,13 @@ body.bg-dark .dropdown-menu-light li a {
   color: #fff !important;
 }
 
+body.bg-light .text-dark {
+  color: #000000 !important;
+}
+body.bg-dark .text-dark {
+  color: #ffffff !important;
+}
+
 .alert {
   position: absolute;
   top: -2rem;
@@ -93,4 +100,7 @@ body.bg-dark .card {
   width: 14rem;
   float: right;
   margin: 0.5rem 0;
+}
+.nav-link {
+  color: #fff !important;
 }
