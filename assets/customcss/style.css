@@ -38,7 +38,8 @@ body.bg-light .cardarea {
 }
 
 body.bg-dark .card-header {
-  border-color: rgb(199, 199, 199);
+  border-color: rgba(199, 199, 199, 0);
+  box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.534);
 }
 body.bg-light .card-header {
   color: var(--color-black);
@@ -451,7 +452,7 @@ body.bg-dark .notfound .notfound-404 h1 {
   color: #fff;
 }
 body.bg-dark h1 {
-  text-shadow: 5px 5px 6px #000000;
+  text-shadow: 5px 5px 6px #0000008e;
 }
 body.bg-light h1 {
   text-shadow: 3px 2px 2px #36454f;
