@@ -5,10 +5,6 @@ let navber = document.querySelector(".navbar");
 modeBtn.style.cursor = "pointer";
 var mode = "bg-dark";
 
-if (body.getAttribute("class")) {
-  navber.classList.add("navbar-dark");
-}
-
 modeBtn.onclick = () => {
   if (body.getAttribute("class") == "bg-dark") {
     body.setAttribute("class", "bg-light");
@@ -30,6 +26,10 @@ modeBtn.onclick = () => {
 mode = localStorage.getItem("mode");
 
 body.setAttribute("class", mode);
+
+if (body.classList.contains("bg-dark")) {
+  navber.classList.add("navbar-dark");
+}
 
 // alert message
 window.setTimeout(function () {
