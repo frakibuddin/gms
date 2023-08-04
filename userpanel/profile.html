@@ -34,11 +34,64 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+                <!-- mobile menu -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none db-991">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <i class="fa-solid fa-table"></i> Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-signal"></i> Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-file-lines"></i> Order History
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-address-card"></i> My Account</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-ticket"></i> Tickets
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i> New Ticket</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comments"></i> Ticket
+                                    History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-receipt"></i> Statement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-newspaper"></i> News &amp; Updates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-coins"></i> Buy Credits</a>
+                    </li>
                 </ul>
+                <div class="me-auto "></div>
+                <!-- end mobile menu -->
                 <form class="d-flex gap-4 align-items-center" role="search">
-
                     <div class="text-info fs-4 " id="mode-btns">
                         <i class="fa-regular fa-sun"></i>
                     </div>
@@ -47,11 +100,12 @@
                             id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="../userpanel/assets/img/img_avatar2.png" alt="hugenerd" width="30" height="30"
                                 class="rounded-circle">
-                            <span class="d-none d-sm-inline text-light mx-1">Profile</span>
+                            <span class="d-none d-sm-inline mx-1 t">Profile</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-light text-small shadow">
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                             <li><a class="dropdown-item" href="invoice.html">Invoice</a></li>
+
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -68,15 +122,14 @@
         </div>
     </nav>
 
-
     <!--srart sidebar -->
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-secondary
-      border-right">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar
+          border-right dn-991">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidemenu-text-color "
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidemenu-text-color"
                         id="menu">
 
                         <li>
@@ -87,10 +140,11 @@
                         </li>
 
                         <li>
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <a href="#submenu1" data-bs-toggle="collapse"
+                                class="nav-link px-0 align-middle dropdown-toggle">
                                 <i class="fa-solid fa-signal"></i> <span class="ms-1 d-none d-sm-inline"> Our
                                     Services</span> </a>
-                            <ul class="collapse  nav flex-column ms-1 " id="submenu1" data-bs-parent="#menu">
+                            <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
                                     <a href="imei-services.html" class="nav-link px-0">
                                         <i class="fa-solid fa-barcode"></i>
@@ -105,7 +159,8 @@
                         </li>
 
                         <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <a href="#submenu2" data-bs-toggle="collapse"
+                                class="nav-link px-0 align-middle dropdown-toggle">
                                 <i class="fa-regular fa-file-lines"></i> <span class="ms-1 d-none d-sm-inline"> Order
                                     History</span>
                             </a>
@@ -131,7 +186,8 @@
                         </li>
 
                         <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <a href="#submenu3" data-bs-toggle="collapse"
+                                class="nav-link px-0 align-middle dropdown-toggle">
                                 <i class="fa-solid fa-ticket"></i><span class="ms-1 d-none d-sm-inline"> Tickets </span>
                             </a>
                             <ul class="collapse  nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
@@ -161,6 +217,7 @@
                                 <span class="ms-1 d-none d-sm-inline"> News & Updates</span>
                             </a>
                         </li>
+
                         <li>
                             <a href="#" class="nav-link px-0 align-middle  ">
                                 <i class="fa-solid fa-coins"></i>
@@ -174,8 +231,7 @@
 
             <!-- start-main content -->
             <div class="col-md-10  flex-shrink-1 mx-auto pb-5  ">
-                <div class="container my-4">
-                    <h1 class="mb-4">Your Profile</h1>
+                <div class="container my-3">
                     <div class="main-body">
                         <div class="row">
                             <div class="col-lg-4">
@@ -183,10 +239,10 @@
                                     <div class="card-body">
                                         <div class="d-flex flex-column align-items-center text-center">
                                             <img src="assets/img/img_avatar2.png" alt="Admin"
-                                                class="rounded-circle p-1 bg-primary" width="110">
+                                                class="rounded-circle p-1 bg-dark" width="110">
                                             <div class="mt-3">
                                                 <p class="text-muted">JPG or PNG no larger than 5 MB</p>
-                                                <button class="btn btn-primary" type="button">Upload new image</button>
+                                                <button class="btn btn-dark" type="button">Upload new image</button>
                                             </div>
                                         </div>
                                         <hr class="my-4">
@@ -310,7 +366,7 @@
                                         <div class="row">
                                             <div class="col-sm-3"></div>
                                             <div class="col-sm-9 text-secondary">
-                                                <input type="button" class="btn btn-primary px-4" value="Save Changes">
+                                                <input type="button" class="btn btn-dark px-4" value="Save Changes">
                                             </div>
                                         </div>
                                     </div>
@@ -347,7 +403,7 @@
                                                 <div class="row">
                                                     <div class="col-sm-3"></div>
                                                     <div class="col-sm-9 text-secondary">
-                                                        <input type="button" class="btn btn-primary px-4"
+                                                        <input type="button" class="btn btn-dark px-4"
                                                             value="Save Changes">
                                                     </div>
                                                 </div>

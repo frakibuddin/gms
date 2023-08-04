@@ -67,7 +67,7 @@
 </head>
 
 <body class="">
-  <nav class="navbar navbar-expand-lg shadow-sm p-3 ">
+  <nav class="navbar navbar-expand-lg shadow-sm p-3">
     <div class="container-fluid">
       <a class="navbar-brand bg-white ps-2 pe-2 pb-2 rounded-3" href="index.html">
         <img src="assets/img/logo1.png" alt="logo" width="me-auto" height="24">
@@ -77,9 +77,54 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+        <!-- mobile menu -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none db-991">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <i class="fa-solid fa-table"></i> Dashboard</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-signal"></i> Our Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-regular fa-file-lines"></i> Order History
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-barcode"></i> IMEI Services</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-server"></i> Server Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-address-card"></i> My Account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-ticket"></i> Tickets
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment"></i> New Ticket</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comments"></i> Ticket History</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-receipt"></i> Statement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-newspaper"></i> News &amp; Updates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-coins"></i> Buy Credits</a>
+          </li>
         </ul>
+        <div class="me-auto "></div>
+        <!-- end mobile menu -->
         <form class="d-flex gap-4 align-items-center" role="search">
           <div class="text-info fs-4 " id="mode-btns">
             <i class="fa-regular fa-sun"></i>
@@ -110,16 +155,15 @@
     </div>
   </nav>
 
-
   <!--srart sidebar -->
-  <div class="container-fluid">
+  <div class="container-fluid ">
     <div class="row flex-nowrap">
-      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-secondary
-      border-right">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar
+      border-right dn-991">
         <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
 
           <ul
-            class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidemenu-text-color "
+            class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start sidemenu-text-color"
             id="menu">
 
             <li>
@@ -130,7 +174,7 @@
             </li>
 
             <li>
-              <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+              <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle dropdown-toggle">
                 <i class="fa-solid fa-signal"></i> <span class="ms-1 d-none d-sm-inline"> Our Services</span> </a>
               <ul class="collapse  nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                 <li class="w-100">
@@ -147,7 +191,7 @@
             </li>
 
             <li>
-              <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+              <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle dropdown-toggle">
                 <i class="fa-regular fa-file-lines"></i> <span class="ms-1 d-none d-sm-inline"> Order History</span>
               </a>
               <ul class="collapse  nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
@@ -172,7 +216,7 @@
             </li>
 
             <li>
-              <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+              <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle dropdown-toggle">
                 <i class="fa-solid fa-ticket"></i><span class="ms-1 d-none d-sm-inline"> Tickets </span>
               </a>
               <ul class="collapse  nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
@@ -217,7 +261,7 @@
       <div class="col py-3 px-4 main-content pb-5 mb-4">
         <h3 class="display-6 pb-4">Welcome To User Dashboard</h3>
         <div class="row justify-content-start gap-5">
-          <div class=" col-lg-3 col-md-6 firstbox shadow-lg rounded-5">
+          <div class=" col-lg-3 col-sm-6 firstbox shadow-lg rounded-5">
             <div class="py-3 text-center firstbox rounded-5">
               <div class="card-body">
                 <h5 class="card-title">
@@ -229,7 +273,7 @@
             </div>
           </div>
 
-          <div class=" col-lg-3 col-md-6 secondbox shadow-lg rounded-5">
+          <div class=" col-lg-3 col-sm-6 secondbox shadow-lg rounded-5">
             <div class="py-3 text-center secondbox rounded-5">
               <div class="card-body">
                 <h5 class="card-title">
@@ -241,7 +285,7 @@
             </div>
           </div>
 
-          <div class=" col-lg-3 col-md-6 thirdbox shadow-lg rounded-5">
+          <div class=" col-lg-3 col-sm-6 thirdbox shadow-lg rounded-5">
             <div class="py-3 text-center thirdbox rounded-5">
               <div class="card-body">
                 <h5 class="card-title">

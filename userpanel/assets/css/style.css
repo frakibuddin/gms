@@ -4,15 +4,6 @@
   font-family: "Nunito", sans-serif;
 }
 
-body.bg-light .sidemenu-text-color a {
-  color: #fff !important;
-}
-body.bg-dark .sidemenu-text-color a {
-  color: #fff !important;
-}
-body .sidemenu-text-color a:hover {
-  color: rgb(51, 204, 224) !important;
-}
 .main-content {
   padding-left: 5% !important;
 }
@@ -37,6 +28,38 @@ body.bg-light .text-dark {
 }
 body.bg-dark .text-dark {
   color: #ffffff !important;
+}
+body .sidebar {
+  background: #e4e4e4;
+  color: #000000 !important;
+  box-shadow: 3px 2px 2px 0px #80808066;
+}
+body.bg-dark .sidebar {
+  background: linear-gradient(45deg, #36454f, #36454f);
+  box-shadow: 4px 2px 5px 0px #445a68d9;
+}
+
+body .sidemenu-text-color a {
+  color: #000000 !important;
+}
+body.bg-dark .sidemenu-text-color a {
+  color: #fff !important;
+}
+body .sidemenu-text-color a:hover {
+  color: rgb(51, 204, 224) !important;
+}
+body.bg-dark .nav-link {
+  color: #fff !important;
+}
+body.bg-light .nav-link {
+  color: #000000;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+.modal-content {
+  color: #000000;
 }
 
 .alert {
@@ -64,7 +87,7 @@ body.bg-dark .text-dark {
   border: 1px solid gray;
 }
 #datatable_paginate .current {
-  background: #0d6efd !important;
+  background: #b9b8b8 !important;
 }
 .table-responsive {
   padding: 1rem 0;
@@ -101,6 +124,26 @@ body.bg-dark .card {
   float: right;
   margin: 0.5rem 0;
 }
-.nav-link {
-  color: #fff !important;
+div.dataTables_filter input {
+  outline: 0 !important;
+  border: 1px solid #0f213f;
+  padding: 0.4rem 1rem;
+  border-radius: 4rem;
+  transition: 0.3s;
+}
+div.dataTables_filter input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(147, 154, 165, 0.25);
+}
+
+div.dataTables_wrapper div.dataTables_length select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(147, 154, 165, 0.25);
+}
+
+@media (max-width: 991px) {
+  .db-991 {
+    display: block !important;
+  }
+  .dn-991 {
+    display: none !important;
+  }
 }
