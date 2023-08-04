@@ -45,9 +45,9 @@ body .sidemenu-text-color a {
 body.bg-dark .sidemenu-text-color a {
   color: #fff !important;
 }
-body .sidemenu-text-color a:hover {
+/* body .sidemenu-text-color a:hover {
   color: rgb(51, 204, 224) !important;
-}
+} */
 body.bg-dark .nav-link {
   color: #fff !important;
 }

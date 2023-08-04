@@ -452,10 +452,10 @@ body.bg-dark .notfound .notfound-404 h1 {
   color: #fff;
 }
 body.bg-dark h1 {
-  text-shadow: 5px 5px 6px #0000008e;
+  text-shadow: 5px 5px 6px #000000ad;
 }
 body.bg-light h1 {
-  text-shadow: 3px 2px 2px #36454f;
+  text-shadow: 3px 2px 2px #36454f54;
 }
 /* js scroll  onscroll animation */
 .js-scroll {
